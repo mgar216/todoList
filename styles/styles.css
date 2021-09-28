@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#window {
+    position: relative;
+    height: 95%;
+    width: 97%;
+    border-style: solid;
+    border-color: darkslateblue;
+    border-radius: 2px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 4fr 1fr 4fr;
+    grid-template-rows: repeat(3, 2fr);
+    align-items: center;
+    justify-items: center;
+}
+
+
+
+#title {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: 5% auto;
+
+}
+
+#title p {
+    font-size: 3vw;
+    text-align: center;
+    user-select: none;
+}
+
+
+#startcards {
+    grid-column: 1;
+    grid-row: 1/4;
+    border-style: dotted;
+    border-color: slateblue;
+    height: 95%;
+    width: 95%;
+    margin: auto;
+    display: flex;
+}
+
+#startcards p {
+    margin: 0 auto;
+    font-size: 3vh;
+    color: blue;
+}
+
+#endcards {
+    grid-column: 3;
+    grid-row: 1/4;
+    border-style: dotted;
+    border-color: salmon;
+    height: 95%;
+    width: 95%;
+    margin: auto;
+    display: flex;
+}
+
+#endcards p {
+    margin: 0 auto;
+    font-size: 3vh;
+    color: red;
+}
+
+#controls {
+    border-style: solid;
+    margin: 25% auto;
+    height: 66vh;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+#add {
+    font-size: 7vh;
+    font-weight: 900;
+    margin: auto;
+    user-select: none;
+    color: red;
+    border-style: dotted;
+    padding: 0 5vw;
+}
+
+#rem {
+    font-size: 7vh;
+    font-weight: 900;
+    margin: auto;
+    user-select: none;
+    color: blue;
+    border-style: dotted;
+    padding: 0 5vw;
+}
+
+._blank {
+    height: 20vh;
+    font-size: 5vh;
+    font-weight: 900;
+    margin: auto;
+    user-select: none;
+}
